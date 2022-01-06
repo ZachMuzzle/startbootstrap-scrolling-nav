@@ -28,7 +28,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
+        <header class="bg-secondary bg-gradient text-white">
             <div class="container px-4 text-center">
                 <h1 class="fw-bolder">Zachary Muzzleman's E-Portfolio</h1>
                 <p class="lead">This webpage provides an overview of projects I have worked on over the course of my school years.</p>
@@ -74,17 +74,53 @@
                     <div class="col-lg-8">
                         <h2>Projects</h2>
                         <p class="lead">I have worked on many school projects through my years here are a few:</p>
+                        <!-- Travel Agent-->
                         <h3>Lisp Travel-Agent</h3>
                         <ul>
                             <li>A project from an AI course I took during the fall 2021 semester. The goal of this project is to find the shortest path 
                                 to a goal city from the start using an A* algorithm.</li>
                         </ul>
+                        <p class="lead">Below is an output from starting at Newark and getting to the goal city of Bangor.</p>
+                        <img class="myImages" id="myImg" src="../dist/../images/Travel_Agent/newark-bangor.jpg" alt="newark-bangor" style="width: 100%; max-width: 200px;">
+
+                        <p class="lead">Other testcases can be quite long. So, if you would like to see more you can view the git repo <a href="https://github.com/ZachMuzzle/LISP-TravelAgent">here.</a></p>
                         <!-- Python Computer Vision PR1-->
                         <h3>Python-Computer-Vision Project 1</h3>
                         <ul>
                             <li>This project has two parts. Part A involves we must convolve, reduce, expand an image then use Gaussian Pyramid then use Laplacian Pyramids then reconstruct the image from Laplacian Pyramid. 
-                                Finally, we blend the images together. Part B, an image is changed by doing a perspective transformation and an Affine Transformation.</li>
+                                Finally, we reconstructed the image from the Laplacian Pyramid back to the how it was in the origanal. Part B, an image is changed by doing a perspective transformation and an Affine Transformation.</li>
                         </ul>
+                        <p class="lead">Below are the outputs of each part from part A.</p>
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/earth.jpg" alt="Earth" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/convolved.jpeg" alt="Convolved Earth" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/expanded.jpeg" alt="Expanded Earth" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/reduced.jpeg" alt="Reduced Earth" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/gaussian_earth.jpeg" alt="Gaussian Earth" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/laplacian_earth.jpeg" alt="Laplacian Earth" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR1/Reconstructed_earth.jpeg" alt="Reconstructed Earth" style="width: 100%; max-width: 200px;">
+
+                        <p class="lead">You can also view the git repo <a href="https://github.com/ZachMuzzle/PR1">here.</a></p>
+
+                        <!--Python Computer Vision PR2-->
+
+                        <h3>Python Stereo Vision Project</h3>
+                        <ul>
+                            <li> This project focused on stereo vision of an image. There were 3 different methods that we used; SSD algorithm which stands for Sum of Squared Difference. SAD which stands for Sum of Absolute Difference. NCC which stands for Normalized Cross Correlaton
+                                We would test on these 3 different methods using different templates and window sizes.
+                            </li>
+                        </ul>
+
+                        <p class="lead">Below you will see many images. The first one is an image of the origanal picture from the left view and the second is the image from the right view. These two images will be used to create one image. 
+                            The next 3 images will all be made using a template of size 10 and window of size 10. The first image is made using NCC, the second is with SAD, and the third is with SSD.
+                        </p>
+                        <img class="myImages" id="myImg" src="../dist/../images/PR2/left_img.jpg" alt="left image" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR2/right_img.jpg" alt="right image" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR2/ncc.jpg" alt="NCC" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR2/sad.jpg" alt="SAD" style="width: 100%; max-width: 200px;">
+                        <img class="myImages" id="myImg" src="../dist/../images/PR2/ssd.jpg" alt="SSD" style="width: 100%; max-width: 200px;">
+
+                        <p class="lead">You can view the git repo <a href="https://github.com/ZachMuzzle/project_2_computer_vision">here.</a></p>
+
                         <!--Machine Learning Group Project-->
                         <h3>Machine Learning Group Project</h3>
                         <ul>
@@ -92,18 +128,39 @@
                             <li>We used a Bank Marketing data set that would predict an output based on 20 attributes with around 41,000 instances.</li>
                             <li>We found the accuracy of this dataset using two different approaches. The first we used pandas and sklearn python libraires. The second method used was numpy and pandas which was more built from scratch. </li>
                         </ul>
+
+                        <p class="lead">You can view the repo <a href="https://github.com/ZachMuzzle/Final_Project_484">here.</a></p>
+                        <!--Black Jack -->
                         <h3>Simple BlackJack Game</h3>
                         <ul>
                             <li>This is simple blackjack card game written in C Langague. </li>
                         </ul>
+                        <p class="lead"> You can view the git repo <a href="https://github.com/ZachMuzzle/BlackJack">here.</a></p>
+                        <p class="lead"  style="color: rgb(48, 3, 3);">I will update the repo in the future with a README</p>
+                        <!-- Decision Tree-->
                         <h3>Lisp-Decision Tree</h3>
                         <ul>
                             <li>Using common lisp a decision tree is made using an id3 algorithm from 100 datasets. Then subsets of the datasets can be created, classifed, and tested to see if they're classifed correctly. 
                                 Then we use cross-validation to see the percent error</li>
                         </ul>
+                        <p class="lead">Below is output from the lisp decision tree program testcases. First it classifies the animal. Then the program calculates the cross-valdation with different folds.</p>
+
+                        <img class="myImages" id="myImg" src="../dist/../images/Decision_Tree/testcases.jpg" alt="newark-bangor" style="width: 100%; max-width: 200px;">
+                        
+                        <p class="lead">You can view the git repo <a href="https://github.com/ZachMuzzle/DecisionTree">here.</a></p>
                     </div>
                 </div>
             </div>
+
+            <!-- MODAL DIV-->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content" id="img01">
+
+                <div id="caption"></div>
+            </div>
+
         </section>
         <!-- Resume section *need to make changes to resume-->
         <section id="resume">
@@ -111,7 +168,7 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Resume</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                        <embed src="../dist/../images/Zachary_Muzzleman_Resume.pdf" type="application/pdf" height="500px" width="100%">
                     </div>
                 </div>
             </div>
